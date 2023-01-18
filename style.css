@@ -1,0 +1,356 @@
+body {
+    font-family: 'Montserrat' , sans-serif;
+}
+
+/* css da página index */
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    clear: left;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 1em;
+}
+
+.principal {
+    background: #FEFEFE;
+    padding: 3em 0;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    float:left;
+    margin: 0 20px 20px 0;
+    width: 150px;
+}
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa-conteudo {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+    background: #888888;
+    padding: 3em 0;
+}
+
+.conteudo-beneficios {
+    margin: 5px auto;
+    width: 670px;
+}
+
+.lista-beneficios {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before{
+    content: "🟊";
+}
+
+.imagem-beneficios {
+    box-shadow: 10px 10px 10px 0 #000000;
+    opacity: 1;
+    transition: 400ms;
+    width: 60%;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+.video {
+    margin: 2em auto;
+    width: 560px;
+}
+
+.caixa {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    color:#000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color:#C78C19;
+    text-decoration: underline;
+}
+
+/* css da página produtos */
+
+.produtos {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 940px;
+}
+
+.produtos li {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    width: 30%;
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    border-color:#088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size:18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* css página de contatos */
+
+form {
+    margin:40px auto;
+    padding:1em;
+}
+
+label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+
+}
+
+.checkbox {
+    margin: 20px 0
+}
+
+.enviar  {
+    background: #ffa500;
+    border:none;
+    border-radius: 5px;
+    color:#FFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    transition: 1s all;
+    width: 30%;
+
+}
+
+.enviar:hover {
+    background-color: #ff8c00;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+    margin-left: 40%;
+ 
+
+}
+
+thead {
+    background: #555555;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+/* css rodapé */
+
+footer {
+    background: url("./assets/img/bg.jpg");
+    padding: 40px 0;
+    text-align: center;
+}
+
+.copyright {
+    color:#FFFFFF;
+    font-size:13px;
+    margin: 20px 0 0;
+
+}
+
+
+
+/* --- css responsivo --- */
+
+@media screen and (max-width: 480px) {
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav {
+        position: static
+    }
+
+    .principal {
+        padding: 1em;
+    }
+
+    .lista-beneficios {
+        width: 100%;
+    }
+
+    .lista-beneficios, p {
+        padding: 1em;
+    }
+
+    .imagem-beneficios {
+        width: 89%;
+    }
+
+    .video, .mapa-conteudo, .imagem-beneficios {
+        margin: 1em;
+    }
+
+  .produtos li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2em;
+        padding: 10px 5px;
+        width: auto;
+        
+    }
+
+    form label, form legend {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        
+    }
+    
+    fieldset {
+        margin:1em 0;
+    }
+
+    .input-padrao {
+        display: flex;
+        flex-direction: column;
+        margin:0 0 15px;
+        padding: 5px 45px;
+        
+    }
+
+    .enviar  {
+        padding: 0.5em;
+        width: auto;
+    }
+
+    .enviar:hover {
+        background-color: #ff8c00;
+        transform:none;
+    }
+
+    
+    .checkbox {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+        
+    }
+
+    select {
+        margin:0.4em;
+        padding: 0.2em;
+    }
+
+    table {
+        margin: 5px 0 10px;
+        margin-left: 10%;
+    
+    }
+     
+}
